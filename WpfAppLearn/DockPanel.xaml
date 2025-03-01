@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfAppLearn.DockPanel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppLearn"
+        mc:Ignorable="d"
+        Background="Azure"
+        Title="DockPanel" Height="450" Width="800">
+    <DockPanel LastChildFill="True">
+        <Border DockPanel.Dock="Left" Background="LightYellow" Height="70" Width="100">
+            <TextBlock Text="左側區域" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        </Border>
+        <Border DockPanel.Dock="Top" Background="LightBlue" Height="50" >
+            <TextBlock Text="聊天室" Foreground="White" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        </Border>
+        
+         <Border DockPanel.Dock="Bottom" Background="Blue" Height="50">
+             
+           
+            <StackPanel Margin="10">
+                
+                <Border Background="#E3F2DF" Padding="10" Margin="0,5" HorizontalAlignment="Left" CornerRadius="5">
+                    <TextBlock Text="你好!"/>
+                </Border>
+                <Border Background="#F5F5F5"
+                        Padding="10" Margin="0,5" HorizontalAlignment="Right" CornerRadius="5">
+                    <TextBlock Text="Hello!"/>
+                </Border>
+            </StackPanel>
+        </Border>
+
+        <Border DockPanel.Dock="Left" Background="LightYellow" Height="50">
+            <TextBlock Text="左側區域" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        </Border>
+        <Border DockPanel.Dock="Right" Background="LightGreen" Height="100">
+            <TextBlock Text="右側區域" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+        </Border>
+    </DockPanel>
+</Window>
